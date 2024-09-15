@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_ad/landingpage.dart';
 
 void main() {
   runApp(const Onboarding());
@@ -60,37 +61,42 @@ class _OnboardingState extends State<Onboarding> {
               const SizedBox(
                 height: 20,
               ),
-              Material(
-                elevation: 5,
-                borderRadius: BorderRadius.circular(60),
-                child: Container(
-                  alignment: Alignment.center,
-                  height: 60,
-                  width: 280,
-                  decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(60)),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const SizedBox(width: 50,),
-                      const Text(
-                        "Continue",
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.w500),
-                      ),
-                      const SizedBox(width: 100,),
-                      Container(
-                        alignment: Alignment.center,
-                        height: 40,
-                        width: 40,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(30)
+              GestureDetector(
+                onTap: (){
+                  runApp(Landingpage());
+                },
+                child: Material(
+                  elevation: 5,
+                  borderRadius: BorderRadius.circular(60),
+                  child: Container(
+                    alignment: Alignment.center,
+                    height: 60,
+                    width: 280,
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(60)),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const SizedBox(width: 50,),
+                        const Text(
+                          "Continue",
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.w500),
                         ),
-                        child: const Icon(Icons.arrow_forward),
-                      )
-                    ],
+                        const SizedBox(width: 100,),
+                        Container(
+                          alignment: Alignment.center,
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(30)
+                          ),
+                          child: const Icon(Icons.arrow_forward),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
