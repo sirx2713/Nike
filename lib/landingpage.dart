@@ -18,7 +18,7 @@ class _LandingpageState extends State<Landingpage> {
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
-          padding: EdgeInsets.only(left: 20, right: 20),
+          padding: const EdgeInsets.only(left: 20, right: 20),
           alignment: Alignment.center,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -30,32 +30,32 @@ class _LandingpageState extends State<Landingpage> {
                   children: [
                     GestureDetector(
                       onTap: (){
-                        runApp(Onboarding());
+                        runApp(const Onboarding());
                       },
-                      child: Icon(Icons.arrow_back_ios_new_outlined),
+                      child: const Icon(Icons.arrow_back_ios_new_outlined),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 150,
                     ),
-                    Image(
+                    const Image(
                       image: AssetImage("images/nikeLogo.png"),
                       width: 60,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 120,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.favorite,
                       color: Colors.grey,
                     )
                   ],
                 ),
               ),
-              SizedBox(height: 100,),
-              Image(image: AssetImage("images/shoe.png")),
+              const SizedBox(height: 100,),
+              const Image(image: AssetImage("images/shoe.png")),
               Container(
                 alignment: Alignment.topLeft,
-                child: Text(
+                child: const Text(
                   "Men's Shoes",
                   style: TextStyle(color: Colors.grey, fontSize: 18),
                 ),
@@ -64,18 +64,18 @@ class _LandingpageState extends State<Landingpage> {
                 alignment: Alignment.topLeft,
                 child: Text(
                   "nike air zoom s 23".toUpperCase(),
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                       fontSize: 28),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
                 alignment: Alignment.topLeft,
-                child: Text(
+                child: const Text(
                   "Colour",
                   style: TextStyle(
                       color: Colors.black,
@@ -94,7 +94,7 @@ class _LandingpageState extends State<Landingpage> {
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(30)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -102,14 +102,14 @@ class _LandingpageState extends State<Landingpage> {
                     height: 30,
                     width: 30,
                     decoration: BoxDecoration(
-                        color: Color(0xff557C56),
+                        color: const Color(0xff557C56),
                         borderRadius: BorderRadius.circular(30)),
-                    child: Icon(
+                    child: const Icon(
                       Icons.check,
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -117,10 +117,10 @@ class _LandingpageState extends State<Landingpage> {
                     height: 30,
                     width: 30,
                     decoration: BoxDecoration(
-                        color: Color(0xffFFE5CF),
+                        color: const Color(0xffFFE5CF),
                         borderRadius: BorderRadius.circular(30)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -128,25 +128,25 @@ class _LandingpageState extends State<Landingpage> {
                     height: 30,
                     width: 30,
                     decoration: BoxDecoration(
-                        color: Color(0xffFF885B),
+                        color: const Color(0xffFF885B),
                         borderRadius: BorderRadius.circular(30)),
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Size",
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 18,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 200,
                   ),
                   Row(
@@ -154,27 +154,27 @@ class _LandingpageState extends State<Landingpage> {
                     children: [
                       Text(
                         "Uk".toUpperCase(),
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.black,
                             fontSize: 18,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         "Us".toUpperCase(),
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.grey,
                             fontSize: 18,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(
                         "eU".toUpperCase(),
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Colors.grey,
                             fontSize: 18,
                             fontWeight: FontWeight.bold),
@@ -183,7 +183,7 @@ class _LandingpageState extends State<Landingpage> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -195,13 +195,13 @@ class _LandingpageState extends State<Landingpage> {
                     width: 70,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color(0xffF5F5F5)),
-                    child: Text(
+                        color: const Color(0xffF5F5F5)),
+                    child: const Text(
                       "8.5",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -210,13 +210,13 @@ class _LandingpageState extends State<Landingpage> {
                     width: 70,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color(0xffF5F5F5)),
-                    child: Text(
+                        color: const Color(0xffF5F5F5)),
+                    child: const Text(
                       "9",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -226,13 +226,13 @@ class _LandingpageState extends State<Landingpage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         color: Colors.black),
-                    child: Text(
+                    child: const Text(
                       "9.5",
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.white),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -241,13 +241,13 @@ class _LandingpageState extends State<Landingpage> {
                     width: 70,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color(0xffF5F5F5)),
-                    child: Text(
+                        color: const Color(0xffF5F5F5)),
+                    child: const Text(
                       "10",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Container(
@@ -256,25 +256,25 @@ class _LandingpageState extends State<Landingpage> {
                     width: 70,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Color(0xffF5F5F5)),
-                    child: Text(
+                        color: const Color(0xffF5F5F5)),
+                    child: const Text(
                       "10.5",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "R799.99",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
                   ),
-                  SizedBox(width: 100,),
+                  const SizedBox(width: 100,),
                   Container(
                     alignment: Alignment.center,
                     height: 60,
@@ -283,7 +283,7 @@ class _LandingpageState extends State<Landingpage> {
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(60)
                     ),
-                    child: Text("Add to Bag", style: TextStyle(color: Colors.white),),
+                    child: const Text("Add to Bag", style: TextStyle(color: Colors.white),),
                   )
                 ],
               )
