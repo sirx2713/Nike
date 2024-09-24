@@ -44,6 +44,7 @@ class _LandingpageState extends State<Landingpage> {
           padding: const EdgeInsets.only(left: 20, right: 20),
           alignment: Alignment.center,
           child: Column(
+
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
